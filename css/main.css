@@ -1,0 +1,337 @@
+body {
+    font-family: Roboto;
+    font-size: 19px;
+    color: white;
+    background-image: url(/images/bg.png);
+}
+
+.headPanel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    min-height: 300px;
+    background-color: #990033;
+    background: linear-gradient(#990033, #cc0033, rgba(255,0,0,0));
+}
+
+#logo {
+    width: 300px;
+    margin: 15px;
+    margin-left: 30px;
+}
+
+#info {
+    float: right;
+    width: 30px;
+    margin: 30px;
+    margin-right: 50px;
+}
+
+#wrapper{
+    position: relative;
+    align-content: center;
+    top: 100px;
+    width: 90%;
+    max-width: 900px;
+    /*height: 30%;*/
+    /*max-height: 550px;*/
+	margin: 30px auto;
+    background-color: white;;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+#scroller{
+    margin: 3px;
+    padding: 10px;
+    padding-left: 20px;
+    max-height: 460px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+#scroller::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+#scroller::-webkit-scrollbar-thumb {
+    background-color: #ffcccc;
+    border-radius: 5px;
+}
+
+#scroller::-webkit-scrollbar-thumb:hover {
+    background-color: #cc0033;
+}
+
+#scroller::-webkit-scrollbar-thumb:active {
+    background-color: #990033;
+}
+
+#nav{
+    position: relative;
+    text-align: center;
+	text-transform: capitalize;
+}
+
+#nav li {
+	display: inline-block;
+    padding: 2px;
+    position: relative;
+	padding: 10px 20px;
+	color: #990033;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#nav li:hover {
+    color: white;
+	background: #cc0033;
+}
+
+.card {
+    display: inline-block;
+    background-color: aliceblue;
+    width: 30%;
+    min-width: 200px;
+    margin: 8px;
+    height: 300px;
+    overflow: visible;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    
+}
+
+.card:hover {
+    animation: soften 0.2s;
+    opacity: 0.9;
+    color: white;
+}
+
+.card img {
+    position: absolute;
+    max-width: 100%;
+}
+
+.card .sub {
+    color: white;
+    position: absolute;
+    background-color: darkslateblue; /*forestgreen;darkolivegreen;darkcyan;darkmagenta*/
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    
+}
+
+.card .sub .name {
+    float: left;
+    margin: 6px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card .sub .time {
+    position: absolute;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+}
+
+.card .sub .add {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    border-style: solid;
+    border-width: thick;
+    border-color: white;
+    border-radius: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    background-color: #cc0033;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card .sub .add:hover {
+    animation: soften 0.3s;
+    background-color: #ff0033;
+}
+
+.card .sub .add:active {
+    background-color: #990033;
+}
+
+.panel {
+    position: relative;
+    width: 94%;
+    min-height: 180px;
+    max-height: 580px;
+    margin: auto;
+    background: linear-gradient(to bottom right, #cc0033, #ff0033);/*#cc0033;/*azure;/*#ffebf0;ff0033*/
+    margin-top: 35px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#panhead {
+    color: white;
+    font-size: 30px;
+    opacity: 1.0;
+    font-weight: 500;
+}
+
+#result {
+    padding: 5px;
+    max-height: 500px;
+    display: inline-block;
+    float: left;
+    overflow-y: scroll;
+}
+
+.card2 {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    background-color: darkslateblue;
+    color: white;
+    margin: 10px;
+    padding: 14px;
+    padding-top: 8px;
+    overflow: visible;
+    position: relative;
+    border-radius: 15px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    opacity: 0.98;
+}
+
+.card2:hover {
+    animation: soften 0.2s;
+    opacity: 0.95;
+}
+
+.card2:active {
+    animation: soften 0.2s;
+    opacity: 1.0;
+}
+
+.card2 .ic2 {
+    position: relative;
+    margin: 5px;
+    max-width: 73%;
+    max-height: 73%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card2 .name2 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.sub2 .remove {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    border-style: solid;
+    border-width: thick;
+    border-color: white;
+    border-radius: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    padding-top: 0px;
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    background-color: #cc0033;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sub2 .remove:hover {
+    animation: soften 0.3s;
+    background-color: #ff0033;
+}
+
+.sub2 .remove:active {
+    background-color: #990033;
+}
+
+.sub2 .settime {
+    /*margin-top: 0px;*/
+}
+
+.sub2 input {
+    width: 35px;
+    height: 12px;
+    margin-left: 5px;
+}
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    margin-bottom: 40px;
+    box-shadow: 0;
+}
+
+.arrow:hover {
+    opacity: 0.9;
+}
+
+#result::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+#result::-webkit-scrollbar-thumb {
+    background-color: #ff9999;
+    border-radius: 5px;
+}
+
+#result::-webkit-scrollbar-thumb:hover {
+    background-color: #ffcccc;
+}
+
+#result::-webkit-scrollbar-thumb:active {
+    background-color: white;
+}
+
+.panel #est {
+    position: absolute;
+    margin: 10px;
+    top: 0;
+    left: 0;
+    font-style: italic;
+    font-size: 22px;
+}
+
+footer div {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+    background-color: white;
+}
+

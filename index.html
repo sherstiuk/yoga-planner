@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">        
+<head lang="en">
+    <meta  charset="UTF-8">
+    <title>Yoga Plan</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/asanas.js"></script>
+    <script type="text/javascript" src="js/add.js"></script>
+    <script type="text/javascript" src="js/selector.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900,700italic,700,500italic,500,400italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>   
+<body>
+  <div class = "headPanel">
+      <img src='images/logo.png' alt="Yoga Plan" id="logo"/>
+      <img src='images/info.png' alt="About" id="info"/>
+    </div>
+    <div id = "wrapper">
+        <ul id = "nav">
+            <li id="s_all">All</li>
+            <li id="s_1">Spine</li>
+            <li id="s_2">Legs</li>
+            <li id="s_3">Arms</li>   
+        </ul>
+        <div id="scroller">
+            <div id = "content">
+                <span id="item">
+                <div class = "card">
+                    <img src="images/testex.jpg"/>
+                    <div class="sub">
+                        <text class="name">Asana</text>
+                        <button class="add">+</button>
+                        <text class="time">Est. min</text>
+                        <text class="dur" hidden>30</text>
+                        <text class="comp" hidden>1</text>
+                        <text class="sym" hidden>0</text>
+                        <text class="ic" hidden>0</text>
+                        <text class="cat" hidden>1</text>
+                    </div>
+                </div>
+                </span>
+            </div>        
+        </div> 
+        <div class = "panel">
+            <!-- Divine Pineapple, who murders goddamn popsicles. Just because he's red... Yeah... BTW, true story! -->
+            <text id="est">est. min</text>
+            <!--<input type="text" name="est" id="est"/>-->
+            <text id="panhead">Practice List
+            <hr></text>
+            <text id="np" hidden>No plan yet.</text>
+            <div id = "result">
+                <span id="res">
+                <div class = "card2">
+                    <text class="name2">Asana</text>
+                    <img class="ic2" src="images/testex.jpg"/>
+                    <div class="sub2">
+                        <button class="remove">-</button>
+                        <form class="settime">
+                            <input onblur="total()" id="m2" type="number" name="min" min="0" max="59" value="0"> min
+                            <input onblur="total()" id="s2" type="number" name="s" min="1" max="59" value="30"> s
+                        </form>
+                    </div>
+                    
+                    <!---->
+                </div>
+                <img src="images/arrow_white.png" class="arrow"/>
+                </span>    
+            </div>        
+    </div>
+</div>
+
+<script type="text/javascript">
+function total(){
+    var seconds = 0;
+    $('input[name=min-vis]').each(function() {
+        console.log(this);
+        //if($(this).hasClass('vis'))
+        console.log('hej');
+    });
+    
+/*    var mins = document.getElementsByName('min');
+    var secs = document.getElementsByName('s');
+    var seconds = 0;
+    for(i = 0; i < mins.length; i++){
+        if(parseInt(mins[i].value)){
+            seconds += parseInt(mins[i].value)*60;
+            console.log(seconds);
+        }
+    }
+    for(j = 0; j < secs.length; j++){
+        if(parseInt(secs[i]))
+            seconds += parseInt(secs[j]);
+    }
+    //var hours = ~~(seconds/3600);
+    //seconds -= (hours*3600);
+    var minutes = ~~(seconds/60);
+    seconds -= (minutes*60);
+    var str = /*hours + 'h ' + minutes + 'm ' + seconds + 's';
+    console.log(str);
+    $('#est').text(str);*/
+    console.log('now!!!');
+}
+</script>    
+    
+</body>
+    <!--
+<footer>
+    <div>A.S./A.S./N.Z., 2016</div>
+</footer>-->
+</html>
